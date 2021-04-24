@@ -1,0 +1,45 @@
+programa 
+{
+    inclua biblioteca Util --> u
+    
+	funcao inicio() {
+		
+		/*6. Faça um algoritmo que preencha um vetor 
+		de 30 posições com números entre 1 e 15 sorteados
+		pelo computador. Depois disso, peça para o usuário
+		digitar um número (chave) e seu programa deve mostrar
+		em que posições essa chave foiencontrada. Mostre também
+		quantas vezes a chave foi sorteada.*/
+		
+		inteiro n[30]
+		inteiro n2
+		inteiro n3
+		
+		para(inteiro i = 0; i < 30; i++){
+		    n2 = u.sorteia(0, 15)
+		    n[i] = n2
+		}
+		
+		escreva("escreva um numero entre 0 e 15 : ")
+		leia(n3)
+		limpa()
+		
+		enquanto(n3 < 0 ou n3 > 15){
+		    escreva("deve ser entre 0 e 15: ")
+		    leia(n3)
+		    limpa()
+		}
+		
+		inteiro r = 0
+		
+		para(inteiro i = 0; i < 30; i++){
+		    se(n3 == n[i]){
+		        escreva("Encontrado na posição: ", i, "\n")
+		        r++
+		    }   
+		    }
+		    
+		    escreva("\nO número-chave ",n3," foi repetido ", r, " vezes\n")
+		
+	}
+}
