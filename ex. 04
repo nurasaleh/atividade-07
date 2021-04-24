@@ -1,0 +1,25 @@
+programa 
+{
+    inclua biblioteca Util --> u
+    
+	funcao inicio() 
+	{
+		
+		/*4. Escreva um programa que preencha automaticamente   
+		um array numérico com 7 números gerados aleatoriamente  
+		pelo computador e depois mostre os valores gerados na 
+		tela. */
+		
+		inteiro n [7]
+		
+		escreva("sorteio\n\n")
+		
+		para(inteiro i = 1; i < 7; i ++){
+		    n [i] = u.sorteia (0, 200)
+		    escreva("Nº ", i,": ", n[i], "\n")
+		}
+		
+		
+		
+	}
+}
