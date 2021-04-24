@@ -1,0 +1,97 @@
+programa 
+{
+	funcao inicio() {
+		
+		/*12.Identificadores que “Qual é” são um fenômeno na internet. Faça um gerador de “qual é” 
+		baseado por exemplo, no dia, mês e ano de nascimento, cor da blusa, autor, livro favorito 
+		ou mesmo gerando frases a partir de números aleatórios. Fique livre para escolher outros
+        exemplos. */
+        
+        inteiro data = 0
+        inteiro mes1 = 0
+        
+        cadeia mes[12]
+            
+            mes[0]  = " arthur o "
+            mes[1]  = " caio o "
+            mes[2]  = " juliette a "
+            mes[3]  = " karol conká a "
+            mes[4]  = " pocah a "
+            mes[5]  = " nego di  "
+            mes[6]  = " lumena a  "
+            mes[7]  = " gilberto o "
+            mes[8]  = " sarah a  "
+            mes[9]  = " viih tube a "
+            mes[10] = " projota o "
+            mes[11] = " fiuk o "
+            
+        
+        
+        cadeia dia[31]
+            
+            dia[0]  = " bananão/bananona  metido a crossfiteiro que tem um romance as escondidas com o brojócolis "
+            dia[1]  = " agroboy/agrogirl advogado da britney spears  "
+            dia[2]  = " protagonista que tem azar no jogo e no amor "
+            dia[3]  = " que jaque é pra tombar coloca todo mundo no paredawn "
+            dia[4]  = " que só dorme "
+            dia[5]  = " planta faz isso????"
+            dia[6]  = " que acha que tudo é muito grave e deslegitima a shippada"
+            dia[7]  = " da cachorrada brasill "
+            dia[8]  = " espiã(ão) que mora em Los Angeles "
+            dia[9]  = "que não gosta de tomar banho"
+            dia[10] = " fresco que não gosta de nenhuma comida e odeia o joão por ser planta  "
+            dia[11] = "  fantasma que cozinha e come comida do ralo"
+            dia[12] = " professor(a) de geografia que é dancarino"
+            dia[13] = " que beijou a boca da jaque é pra tombar "
+            dia[14] = " que é trouxa por ter ficado com o babanão do arthur porque ele te traía com o projócolis"
+            dia[15] = " que enfrentou a jaque e nunca foi pro paredawn "
+            dia[16] = " que ninguém lembra da existência porque saiu na primeira semana"
+            dia[17] = " que é planta e tipo assim tem tipo o vocabulário assim tipo horrível "
+            dia[18] = "que desistiu na segunda semana mas é amado por todos5 "
+            dia[19] = " ex da rafa kalliman "
+            dia[20] = " tchurubei tchurubai "
+            dia[21] = " cospe na boca de gatos"
+            dia[22] = " crossfiteiro(a) que desloca o ombro na psinina de bolinha"
+            dia[23] = " que passa gelzinho no cabelo ex crente"
+            dia[24] = " canta melhor que os prórios cantores da casa"
+            dia[25] = " que nao é chiquitita"
+            dia[26] = " que chora por 0 motivos"
+            dia[27] = " filho(a) do roberto carlos e da glória pires"
+            dia[28] = " que tem pocahzideia"
+            dia[29] = "terror do boninho"
+            dia[30] = " que é apaixonado(a) pelo dummie"
+            
+        
+        
+        escreva("quem você seria no Big Brhother Brasil? ")
+        
+        escreva("escreva o mês do seu aniversário em números: ")
+        leia(mes1)
+        
+        enquanto(mes1 < 0 ou mes1 > 12){
+            
+            escreva(" apenas escreva números de 1 á 12: ")
+            leia(mes1)
+            limpa()
+            
+        }
+        
+        mes1 = mes1 - 1
+        
+        escreva("escreva o dia do seu aniversário em números: ")
+        leia(data)
+        
+        enquanto(data < 0 ou data > 31){
+            
+            escreva(" apenas escreva números de 1 á 31: ")
+            leia(mes1)
+            limpa()
+            
+        }
+        
+        data = data - 1
+        
+        escreva("você seria:  ", mes[mes1] + dia[data], "\n")
+        
+	}
+}
