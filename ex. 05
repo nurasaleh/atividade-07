@@ -1,0 +1,40 @@
+programa {
+	funcao inicio() {
+		
+		/*5. Escreva um programa que leia 10 números inteiros
+		e guarde- os em um vetor. Ao final, mostre quais são 
+		os números pares que foram digitados e em que posições 
+		eles estão armazenados. */
+		
+		inteiro n[10]
+		
+		para(inteiro i = 0; i< 10; i++){
+		    escreva("escreva um número: \n")
+		    leia(n[i])
+		    limpa()
+		}
+		
+		se(n[0] == 0 ou n[1] == 0 ou n[2] == 0 ou n[3] == 0 ou n[4] == 0 ou n[5] == 0 ou n[6] == 0 ou n[7] == 0 ou n[8] == 0 ou n[9] == 0){
+		        escreva("números neutros\n")
+		    }  
+		    para(inteiro i = 0; i< 10; i++){
+		    se(n[i] == 0){escreva("\nnúmero: ",n[i] ," posição: ",i)
+		        
+		    }
+		    }
+		    
+		escreva("\nnúmeros pares\n")
+		
+			para(inteiro i = 0; i< 10; i++){
+		    se(n[i] % 2 == 0 e n[i] != 0){
+		        escreva("\nnúmero: ",n[i] ,"  posição: ",i)
+		        
+		    }
+		    }
+
+		    
+		    
+		
+		
+	}
+}
