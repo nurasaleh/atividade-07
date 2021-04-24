@@ -1,0 +1,31 @@
+programa {
+	funcao inicio() {
+	    
+		/*10.Escreva um algoritmo que leia uma matriz 
+		de inteiros com 3 linhas e 5 colunas com valores
+        informados pelo usuário. Ao final, mostre: quais
+        são os números pares digitados e a posição
+        (linha, coluna) em que eles foram armazenados.*/
+        
+        inteiro n[3][5]
+        
+        para(inteiro i = 0; i< 3; i++){
+            para(inteiro c = 0; c < 5; c++){
+                escreva("digite um número: ")
+                leia(n[i][c])
+                limpa()
+            }  
+        }   
+        para(inteiro i = 0; i < 3; i++){ 
+            para(inteiro c = 0; c < 5; c++){
+                se(n[i][c] % 2 == 0){         
+                escreva("Nº ", n[i][c], "  |  linha: ", i,"  |  coluna: ", c," \n")      
+                
+                }  
+            }
+        }
+        
+        
+        
+	}
+}
